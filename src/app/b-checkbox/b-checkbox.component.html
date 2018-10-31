@@ -1,0 +1,4 @@
+<div class="custom-control custom-checkbox">
+  <input [indeterminate]="indeterminate" type="checkbox" class="custom-control-input" [id]="label" (change)="onChange($event.target)" [checked]="checked">
+  <label class="custom-control-label" [for]="label">{{label}}</label>
+</div>

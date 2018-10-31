@@ -1,0 +1,15 @@
+<header>
+  <button (click)="a1()">A1</button>
+  <button (click)="a2()">A2</button>
+</header>
+<section class="container">
+  <div class="row">
+    <aside class="col-2">
+      <ng-template appAsideLoader></ng-template>
+    </aside>
+    <main class="col">
+      <app-nested *ngFor="let child of children" [item]="child"></app-nested>
+    </main>
+  </div>
+</section>
+<router-outlet></router-outlet>

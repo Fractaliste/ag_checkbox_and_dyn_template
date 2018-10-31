@@ -1,0 +1,4 @@
+<div class="pl-5">
+  <app-b-checkbox [label]="item.name" [checked]="checked" [indeterminate]="indeterminate" (changeEventEmitter)="onCbChange($event)"></app-b-checkbox>
+  <app-nested *ngFor="let child of item.children" [checked]="checked" [item]="child" (changeEventEmitter)="onChildChange($event)"></app-nested>
+</div>
